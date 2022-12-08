@@ -1,0 +1,1 @@
+Because both title and catergory are String type, the constructor sign is the same (constructor(String))). So, you can not create two constructor methods with the same sign.
