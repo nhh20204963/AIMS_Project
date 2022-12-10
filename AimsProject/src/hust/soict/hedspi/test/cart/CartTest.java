@@ -25,6 +25,8 @@ public class CartTest {
 		//test the print method
 		cart.printCart();
 		//to-do:test the search methods here
+		//cart.searchDVDByID();
+        //cart.searchDVDByTitle();
 	}
 
 }

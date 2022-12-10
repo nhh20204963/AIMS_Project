@@ -51,7 +51,13 @@ public abstract class Media {
 	public boolean equals(Object obj) {
 		return this.title == ((Media) obj).title;
 	}
-	
+	public boolean isMatch(String st) {
+		if(this.title.equals(st)) {
+			return true;
+		}
+		return false;
+	}
+	public abstract void play();
 	public static final Comparator<Media> COMPARE_BY_TITLE_COST = new MediaComparatorByTitleCost();
     public static final Comparator<Media> COMPARE_BY_COST_TITLE = new MediaComparatorByCostTitle();
 }

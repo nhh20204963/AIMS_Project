@@ -3,6 +3,9 @@ package hust.soict.hedspi.aims.media;
 public class Disc extends Media{
 	protected int length;
 	protected String director;
+	public Disc() {
+		
+	}
 	public Disc(String title) {
 		super(title);
 	}
@@ -43,6 +46,9 @@ public class Disc extends Media{
 	
 	public boolean isMatch(String title) {
 		return this.getTitle().contains(title);
+	}
+	public void play() {
+		
 	}
 	
 }

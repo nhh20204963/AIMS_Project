@@ -5,9 +5,8 @@ import java.util.ArrayList;
 public class Book extends Media{
 	private ArrayList<String> authors = new ArrayList<String>();
 	
-	public Book(String title, String category, float cost, ArrayList<String> authors) {
+	public Book(String title, String category, float cost) {
 		super(title, category, cost);
-		this.authors = authors;
 	}
 	public boolean addAuthor(String authorname) {
 		if(authors.contains(authorname)) {
@@ -32,5 +31,10 @@ public class Book extends Media{
             str.append(author + ", ");
         }
         return str.toString() + ": " + this.getCost() + "$";
+	}
+	@Override
+	public void play() {
+		System.out.println("Book doesn't play");
+		
 	}
 }
