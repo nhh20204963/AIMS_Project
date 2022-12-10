@@ -1,9 +1,6 @@
 package hust.soict.hedspi.aims;
 
-import java.sql.DatabaseMetaData;
 import java.util.Scanner;
-
-import javax.print.DocFlavor.INPUT_STREAM;
 
 import hust.soict.hedspi.aims.store.Store;
 
